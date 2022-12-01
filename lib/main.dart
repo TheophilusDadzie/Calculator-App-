@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Calculator App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: 'Noto',
       ),
       themeMode: ThemeMode.system,
       home: HomePage(),
