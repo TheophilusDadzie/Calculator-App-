@@ -1,3 +1,4 @@
+import 'package:calculator/utils/calculator_functions.dart';
 import 'package:calculator/utils/margins/y_margin.dart';
 import 'package:flutter/material.dart';
 import '../widgets/custom_button.dart';
@@ -10,6 +11,7 @@ class CalculatorScreen extends StatefulWidget {
 }
 
 class _CalculatorScreenState extends State<CalculatorScreen> {
+  final CalculatorFunctions calculatorFunctions = CalculatorFunctions();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +19,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 20.0,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.end,
@@ -60,7 +64,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
                   // 2 button
                   CustomButton(
-                    buttonText: 'del',
+                    buttonText: '⌫',
                     buttonColor: Colors.grey,
                     textColor: Colors.white,
                     onPressed: () {},
