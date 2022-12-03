@@ -28,7 +28,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             children: [
               //1st Text
               Text(
-                '0',
+                calculatorFunctions.expression,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 50,
@@ -40,7 +40,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               ),
               // 2nd Text
               Text(
-                '0',
+                calculatorFunctions.result,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
@@ -59,7 +59,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: 'C',
                     buttonColor: Colors.grey,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('C');
+                      });
+                    },
                   ),
 
                   // 2 button
@@ -67,7 +71,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '⌫',
                     buttonColor: Colors.grey,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('⌫');
+                      });
+                    },
                   ),
 
                   // 3 button
@@ -75,7 +83,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '%',
                     buttonColor: Colors.grey,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('%');
+                      });
+                    },
                   ),
 
                   // 4 button
@@ -83,7 +95,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '/',
                     buttonColor: Colors.orange,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('/');
+                      });
+                    },
                   ),
                 ],
               ),
@@ -100,7 +116,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '7',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('7');
+                      });
+                    },
                   ),
 
                   // 2 button
@@ -108,7 +128,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '8',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('8');
+                      });
+                    },
                   ),
 
                   // 3 button
@@ -116,7 +140,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '9',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('9');
+                      });
+                    },
                   ),
 
                   // 4 button
@@ -124,7 +152,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '*',
                     buttonColor: Colors.orange,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('*');
+                      });
+                    },
                   ),
                 ],
               ),
@@ -141,7 +173,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '4',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('4');
+                      });
+                    },
                   ),
 
                   // 2 button
@@ -149,7 +185,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '5',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('5');
+                      });
+                    },
                   ),
 
                   // 3 button
@@ -157,7 +197,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '6',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('6');
+                      });
+                    },
                   ),
 
                   // 4 button
@@ -165,7 +209,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '-',
                     buttonColor: Colors.orange,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('-');
+                      });
+                    },
                   ),
                 ],
               ),
@@ -182,7 +230,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '1',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('1');
+                      });
+                    },
                   ),
 
                   // 2 button
@@ -190,7 +242,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '2',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('2');
+                      });
+                    },
                   ),
 
                   // 3 button
@@ -198,7 +254,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '3',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('3');
+                      });
+                    },
                   ),
 
                   // 4 button
@@ -206,7 +266,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '+',
                     buttonColor: Colors.orange,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('+');
+                      });
+                    },
                   ),
                 ],
               ),
@@ -223,7 +287,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '0',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('0');
+                      });
+                    },
                   ),
 
                   // 2 button
@@ -231,7 +299,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '.',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('.');
+                      });
+                    },
                   ),
 
                   // 3 button
@@ -239,7 +311,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '00',
                     buttonColor: Colors.white12,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('00');
+                      });
+                    },
                   ),
 
                   // 4 button
@@ -247,7 +323,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonText: '=',
                     buttonColor: Colors.orange,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        calculatorFunctions.performButtonAction('=');
+                      });
+                    },
                   ),
                 ],
               ),
